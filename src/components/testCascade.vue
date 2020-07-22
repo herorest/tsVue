@@ -15,8 +15,8 @@ import { Mutation, Action, State, namespace } from "vuex-class";
 })
 export default class testCascade extends Vue {
   @Prop({ default: "" }) title!: string;
-  @Prop({ default: "" }) value!: Array<any>;
-  @Prop({ default: () => [] }) options!: Array<any>;
+  @Prop({ default: "" }) value!: Array<string>;
+  @Prop({ default: () => [] }) options!: Array<Modules.Cascade.options>;
 
   prefixCls: string = "cascade";
 
